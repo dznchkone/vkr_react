@@ -82,15 +82,15 @@ export const PlansList = (props) => {
                 onClick={deleteHandler}
                 data-plan-id={plan._id}
                 
-                className="btn btn-small right  btn--left-margin"
+                className="btn btn-small right  btn--left-margin blue-grey"
                 >
                   Удалить
                   <i className="material-icons small">clear</i>
                 </button>
                 <Link 
-                to={`dashboard/editplan/${plan._id}`}
+                to={`/dashboard/editplan/${plan._id}`}
                 
-                className="btn btn-small right"
+                className="btn btn-small right deep-purple"
                 >
                   Редактировать
                   <i className="material-icons small">edit</i>

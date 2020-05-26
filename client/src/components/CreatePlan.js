@@ -51,7 +51,7 @@ export const CreatePlan = (props) => {
 
     <div className="row dashboard-container">
       <div className="col s12 m12 absolute-center">
-        <div className="card blue-grey lighten-3">
+        <div className="card blue-grey">
           <div className="card-content white-text">
             <div className="row">
               <div className="input-field col s12">
@@ -63,7 +63,7 @@ export const CreatePlan = (props) => {
                 onChange={changeHandler}
                 
                 />
-                <label htmlFor="name">Название</label>
+                <label htmlFor="name" className="white-text">Название</label>
               </div>
             </div>
             <div className="row">
@@ -77,7 +77,7 @@ export const CreatePlan = (props) => {
                 onChange={changeHandler}
                 
                 />
-                <label htmlFor="price">Стоимость</label>
+                <label htmlFor="price" className="white-text">Стоимость</label>
               </div>
             </div>
 
@@ -92,7 +92,7 @@ export const CreatePlan = (props) => {
                 onChange={changeHandler}
                 
                 />
-                <label htmlFor="textarea1">Описание</label>
+                <label htmlFor="textarea1" className="white-text">Описание</label>
               </div>
             </div>
 

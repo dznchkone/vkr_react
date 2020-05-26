@@ -83,24 +83,27 @@ export const EditPlan = (props) => {
         <div className="card blue-grey ">
           <div className="card-image">
             <img src={require('../img/rtk_logo.png')}/>
-            <input 
+          </div>
+          <div className="card-content">
+          <input 
             type="text" 
             placeholder="Название тарифа"
+            className="input-field"
             value={form.name}
             name="name"
             onChange={changeHandler}
             ></input>
-          </div>
-          <div className="card-content">
             <input 
             type="number" 
             placeholder="Стоимость"
+            className="input-field"
             value={form.price}
             name="price"
             onChange={changeHandler}
             ></input>
             <textarea 
             rows="20"
+            className="materialize-textarea"
             placeholder="Описание"
             value={form.description}
             name="description"
