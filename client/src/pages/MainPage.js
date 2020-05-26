@@ -46,7 +46,7 @@ export const MainPage = () => {
       <Navbar links={NAVBAR_LINKS}></Navbar>
       <div className="row plans-wrapper">
       {plans.map(plan=>{
-        return (
+        return ( 
         <PlanCard plan={plan}/>
         )
       })}

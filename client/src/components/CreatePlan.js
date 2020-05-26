@@ -51,7 +51,7 @@ export const CreatePlan = (props) => {
 
     <div className="row dashboard-container">
       <div className="col s12 m12 absolute-center">
-        <div className="card blue-grey darken-1">
+        <div className="card blue-grey lighten-3">
           <div className="card-content white-text">
             <div className="row">
               <div className="input-field col s12">
@@ -81,10 +81,11 @@ export const CreatePlan = (props) => {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row description">
               <div className="input-field col s12">
                 <textarea 
                 id="description" 
+                rows="20"
                 className="materialize-textarea" 
                 name="description"
                 defaultValue={""} 
@@ -97,7 +98,7 @@ export const CreatePlan = (props) => {
 
             <div className="card-action">
               <button 
-              className="btn"
+              className="btn orange darken-4"
               
               onClick={createHandler}
               >Сохранить</button>

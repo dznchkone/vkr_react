@@ -7,6 +7,16 @@
   justify-content: space-around;
 }
 
+.card-content{
+  height: auto;
+  overflow: hidden;
+}
+
+.card-content__text{
+  font-size: .8em;
+  word-wrap: break-word;
+}
+
 .dashboard-container{
   
   margin-top: 5em;
@@ -19,8 +29,15 @@
 .plans-wrapper{
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.plan{
+  width: 30%;
 }
 
 .plan-name{
   margin-left: .5em;
 }
+
+

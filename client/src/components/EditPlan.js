@@ -36,7 +36,7 @@ export const EditPlan = (props) => {
         Authorization: `Bearer ${token}`
       })
       setPlan(fetched)
-      
+      setForm(fetched)
     } catch (e) {}
   }, [token, planId, request])
 
@@ -74,16 +74,19 @@ export const EditPlan = (props) => {
     return <Loader />
   }
 
+
+
   return (
     <div className="center">
     <div className="row">
       <div className="col s6 offset-s3">
-        <div className="card">
+        <div className="card blue-grey ">
           <div className="card-image">
             <img src={require('../img/rtk_logo.png')}/>
             <input 
             type="text" 
-            placeholder={plan.name}
+            placeholder="Название тарифа"
+            value={form.name}
             name="name"
             onChange={changeHandler}
             ></input>
@@ -91,20 +94,22 @@ export const EditPlan = (props) => {
           <div className="card-content">
             <input 
             type="number" 
-            placeholder={plan.price}
+            placeholder="Стоимость"
+            value={form.price}
             name="price"
             onChange={changeHandler}
             ></input>
             <textarea 
             rows="20"
-            placeholder={plan.description}
+            placeholder="Описание"
+            value={form.description}
             name="description"
             onChange={changeHandler}
             ></textarea>
           </div>
           <div className="card-action">
           <button 
-              className="btn"
+              className="btn orange darken-4"
               onClick={editHandler}
               >Сохранить</button>
           </div>
