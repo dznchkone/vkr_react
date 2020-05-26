@@ -1,0 +1,26 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.card-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.dashboard-container{
+  
+  margin-top: 5em;
+}
+
+.btn--left-margin{
+  margin-left: 1em;
+}
+
+.plans-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.plan-name{
+  margin-left: .5em;
+}

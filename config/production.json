@@ -1,0 +1,6 @@
+{
+  "port" : "",
+  "mongoUri" : "",
+  "jwtSecretKey" : "CDD37BEBAAA5F316B6F8680AE2BEACA3AB5C92F6739FE88843F698D731EC0D95"
+  
+}
