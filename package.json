@@ -4,6 +4,7 @@
   "description": "SPA",
   "main": "app.js",
   "scripts": {
+    "restart": "npm run client:install&&npm run client:build",
     "production": "cross-env NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
