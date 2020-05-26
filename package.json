@@ -4,7 +4,7 @@
   "description": "SPA",
   "main": "app.js",
   "scripts": {
-    "production": "cross-env NODE_ENV=production concurrently \"npm run client:install\" \"npm run client:build\" \"node app.js\"",
+    "production": "cross-env NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
     "client:install": "npm install --prefix client",
